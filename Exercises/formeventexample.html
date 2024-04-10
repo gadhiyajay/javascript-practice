@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events Exercise!</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+<label for="">Name</label> <input type="text" id="fname" onfocus="focusFunction(this)" onblur="blurFunciton(this)" oninput="inputFunction(this)" onselect="selectFunction()"> <br><br>
+<label for="">Class</label> <input type="text" id="lname" onfocus="focusFunction(this)" onblur="blurFunciton(this)" required> <br><br>
+<label for="">Country</label>
+<select id="" onfocus="focusFunction(this)" onblur="blurFunciton(this)" onchange="changeFunction(this)">
+<option value="India">India</option>
+<option value="America">America</option>
+<option value="Canada">Canada</option>
+<option value="United Kingdoms">United Kingdoms</option>
+<option value="Ireland">Ireland</option>
+</select>
+<br>
+<button type="submit">Submit</button>
+</form>
+<div id="test" style="border: 1px solid orange;"></div>
+<div id="test2" style="border: 1px solid orange;"></div>
+<p style="font-size: xx-small;font-weight:50 ;">Name have oninput(), therefore it changes the value instantly.</p>
+<p style="font-size: xx-small;font-weight:50 ;">The Country Selector have onchange(), therefore it changes the value once clicked outside the box!</p>
+
+</body>
+<script src="formevents.js"></script>
+
+</script>
+</html>

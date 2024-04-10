@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Storage</title>
+</head>
+<body>
+<h1>Local Storage Basic Method</h1>
+<h2>The Data you entered have been saved in local storage!</h2>
+</body>
+<script>
+        alert("Hello! \nIn the next pop-up, please add the Key name and then add value for that key!")
+        let key = prompt("Enter the Value of Key");
+        let value = prompt("Enter the value for the Key!");
+        localStorage.setItem(key, value);
+        console.log("You Entered a key " + key + " with a value " + value)
+</script>
+</html>

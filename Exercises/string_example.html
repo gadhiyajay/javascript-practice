@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Example</title>
+</head>
+<body>
+    <h2>Capitalize the name of the cities!</h2>
+    <div class="main">
+        <h1>String Example 1</h1>
+        <ol id="cities"></ol>
+    </div>
+</body>
+<script>
+    let list = document.getElementById('cities')
+    const cities = ['ahMEdaBad', 'BanARas', 'mUmBAi', 'gOA', 'DeLHI',
+                     'JaIpuR', 'nEw yoRk', 'sAn AnDreAs'];
+    for (let i in cities){
+        //console.log(cities[i])
+        let lowercase = cities[i].toLowerCase()
+       //console.log(lowercase)
+        let firstletter = lowercase.slice(0, 1)
+        lowercase = lowercase.replace(firstletter, firstletter.toUpperCase());
+        console.log(lowercase)
+        let listItem = document.createElement('li')
+        listItem.textContent = lowercase
+        list.appendChild(listItem)
+
+    }
+
+</script>
+</html>
